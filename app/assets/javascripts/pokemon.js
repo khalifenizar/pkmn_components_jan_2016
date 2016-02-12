@@ -15,6 +15,7 @@ PokemonApp.Pokemon.prototype.render = function () {
       $(".js-pkmn-id").text(response.pkdx_id);
       $(".js-pkmn-height").text(response.height);
       $(".js-pkmn-weight").text(response.weight);
+      $(".js-evolutions").data("pkmn-id", response.pkdx_id)
 
       $(".js-pokemon-modal").modal("show");
     },
